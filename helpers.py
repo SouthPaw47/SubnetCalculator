@@ -104,20 +104,5 @@ def calculate_last_two_hosts(broadcast_address):
     second_last_host = broadcast_address[:-1] + str(int(broadcast_address[-1]) - 2)
     return second_last_host, last_host
 
-# cidr : 16 - 1111111.111111.0000000.000000
-# subnets
-# 30
 
-# 30 to bits - 5
-# cidr : 16 + 5 = 21
-# hosts : 32 - cidr = 32 - 21 = 11
-
-# cidr : 16 - 1111111.111111.000000.000000
-# hosts
-# 120
-
-# 120 to bits = 7
-# hosts = 7
-# subnets = 32 - hosts - cidr
-# cidr = cidr + subnets / 32 - hosts = 32 - 7 = 25 
 
